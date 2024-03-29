@@ -1,12 +1,5 @@
 package com.chryl.excelToWordTable;
 
-/**
- * excel 数据转为 word表格
- * Created by Chr.yl on 2024/3/9.
- *
- * @author Chr.yl
- */
-
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -20,6 +13,15 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
+/**
+ * 参考模板
+ * excel 数据转为 word表格
+ * Created by Chr.yl on 2024/3/9.
+ *
+ * @author Chr.yl
+ */
+
 
 public class ChrWordTable {
     public static void main(String[] args) throws Exception {
