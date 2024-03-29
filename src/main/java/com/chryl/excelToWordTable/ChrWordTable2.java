@@ -29,7 +29,7 @@ public class ChrWordTable2 {
         /**
          * read excel
          */
-        try (FileInputStream fis = new FileInputStream("/Users/chryl/Downloads/temp.xlsx");
+        try (FileInputStream fis = new FileInputStream("/Users/chryl/Downloads/temp3.xlsx");
              XSSFWorkbook workbook = new XSSFWorkbook(fis)) {
             // 获取第一个工作表
             XSSFSheet sheet = workbook.getSheetAt(0);
@@ -56,16 +56,16 @@ public class ChrWordTable2 {
                 // 读取每一列的数据
                 String firFunction = row.getCell(2).getStringCellValue();
                 String function = row.getCell(3).getStringCellValue();
-                String functionDesc = row.getCell(4).getStringCellValue();
+//                String functionDesc = row.getCell(4).getStringCellValue();
                 int rowNum = row.getRowNum();
                 System.out.println("rowNum: " + rowNum);
 
 //                System.out.println(function);
 //                System.out.println(functionDesc);
-
+               //写入word中
                 table.getRow(rowNum).getCell(0).setText(firFunction);
                 table.getRow(rowNum).getCell(1).setText(function);
-                table.getRow(rowNum).getCell(2).setText(functionDesc);
+//                table.getRow(rowNum).getCell(2).setText(functionDesc);
 
                 // 处理数据...
             }
