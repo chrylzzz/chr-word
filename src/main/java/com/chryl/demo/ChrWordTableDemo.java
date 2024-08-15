@@ -37,7 +37,7 @@ public class ChrWordTableDemo {
 
             // 遍历每一行
             for (Row row : sheet) {
-                // 读取每一列的数据
+                // 读取每一列的数据， 0开始
 //                String name = row.getCell(0).getStringCellValue();
 //                String firFunction = row.getCell(2).getStringCellValue();
 //                if(StringUtils.isBlank(){
